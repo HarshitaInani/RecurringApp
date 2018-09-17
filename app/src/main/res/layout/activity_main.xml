@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.recurringapp.MainActivity"
+    android:background="@drawable/img1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="left"
+            android:text="Account Details"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+
+
+        <EditText
+            android:id="@+id/et_emailaddress_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/textboxshape"
+            android:hint="Email"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/textview_text_color"
+            android:textColorHint="@color/grey"
+             />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:hintEnabled="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_password_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/textboxshape"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingRight="2dp"
+                android:textColor="@color/textview_text_color"
+                android:textColorHint="@color/grey" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/SingUpPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Forgot your password?"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Get a new one"
+                android:textColor="#5A5A5A"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
